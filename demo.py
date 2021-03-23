@@ -12,11 +12,11 @@ import transformers
 
 flags.DEFINE_boolean('debug', False, '')
 flags.DEFINE_integer('epochs', 10, '')
-flags.DEFINE_integer('batch_size', 8, '')
-flags.DEFINE_float('lr', 1e-2, '')
+flags.DEFINE_integer('batch_size', 32, '')
+flags.DEFINE_float('lr', 1e-4, '')
 flags.DEFINE_float('momentum', .9, '')
 flags.DEFINE_string('model', 'bert-base-uncased', '')
-flags.DEFINE_integer('seq_length', 32, '')
+flags.DEFINE_integer('seq_length', 128, '')
 
 FLAGS = flags.FLAGS
 
